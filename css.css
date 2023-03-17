@@ -1,0 +1,192 @@
+body{
+    background-color: rgb(200, 200, 200);
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: #d4e7ff;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    padding-top: 10px;
+    vertical-align: baseline;
+    font-size: 30px;
+}
+
+.un-header{
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
+
+.url-txt{
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 13px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.url-txt:hover{
+    text-decoration: underline;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.title{
+    margin: 0px;
+    font-weight: bold;
+}
+
+
+.btn-s{
+    height: 29px;
+    font-size: 18px;
+    margin-left: -10px;
+    border-radius: 0 10px 10px 0;
+    border-width: 1px;
+    background-color:rgb(240, 240, 240);
+    color: black;
+    font-weight: 500;
+}
+
+
+.ct-in{
+    height: 25px;
+    font-size: 18px;
+    margin-right: 0px;
+    border-radius: 10px 0 0 10px;
+    border-width: 1px;
+}
+
+.searcher{
+    margin-top: -5px;
+}
+
+.main{
+    margin: 5px 0px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.card-today{
+    margin: 5px 0px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.txt-cur{
+    color:darkcyan;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.dv-txt-cur{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image{
+    width: 70px;
+    height: 70px;
+}
+
+.image2{
+    width: 35px;
+    height: 35px;
+}
+
+.main-info-td{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dop-info{
+    color: gray;
+}
+
+.r-temp{
+    font-size: 37px;
+    margin: 0px;
+}
+
+.f-temp{
+    font-size: 13px;
+}
+
+.bl{
+    text-align: center;
+}
+
+.cur-nc{
+    margin: 10px 0;
+}
+
+.tb{
+    width: 100%;
+    padding: 0 20px 10px 20px;
+    font-size: 12px;
+    color:black;
+    font-weight: 500;
+
+}
+
+.bordered {
+    border-bottom: 1px solid rgb(193, 193, 193);
+}
+
+.cur2{
+    color:rgb(108, 108, 108);
+    margin: 0;
+}
+
+td{
+    padding-top: 10px;
+}
+
+.elem-ct{
+    display: flex;
+    justify-content: space-around;
+    background-color: #d4e7ff;
+    width: 45%;
+    margin: 10px 0;
+}
+
+.ct-txt{
+    margin-top:8px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.card-active{
+    background-color: white;
+    width: 18%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.card{
+    background-color: rgb(235, 235, 235);
+    width: 18%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.card-days{
+    margin: 16px;
+    margin-bottom: 0;
+}
+
+.p-txt{
+    margin: 0;
+}
+
+#date{
+    display: none;
+}

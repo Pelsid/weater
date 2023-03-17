@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link href="css.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <span class="title">OpenWeather</span>
+            <span>.API</span>
+        </div>
+        <div class="searcher">
+            <input class="ct-in"  id="sC" value="Omsk" >
+            <button class="btn-s" onclick="getInfo()">Поиск</button>
+        </div>
+    </header>
+    <div class="un-header">
+        <span class="url-txt" onclick="output()" id="btn-t">Сегодня</span>
+        <span class="url-txt" onclick="output2()" id="btn-ds">Прогноз на 5 дней</span>
+    </div>
+<div class="all-div">
+    
+    <div class="card-today">
+        <div class="dv-txt-cur">
+            <span class="txt-cur">Текущая погода</span>
+            <span class="txt-cur" id="date">20.01.2023</span>
+        </div>
+        <div class="main-info-td" id="now">
+            <div class="bl">
+                <img class="image" src="https://e7.pngegg.com/pngimages/363/657/png-clipart-computer-icons-chromatography-50x50-chromatogram-miscellaneous-text.png"/>
+                <p>Облачность</p>
+            </div>
+            <div class="bl">
+                <p class="r-temp">11&#176;C</p>
+                <span class="f-temp">Ощущается как 10.52&#176;C</span>
+            </div>
+            <div>
+                <p class="dop-info">Восход: 07 : 17</p>
+                <p class="dop-info">Закат: 16 : 39</p>
+                <p class="dop-info">Продолжительность: 09 : 22</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="main">
+        <table class="tb" id="more-info">
+            <tr class="cur2">
+                <td><span class="cur2 txt-cur">Погода на день</span></td>
+                <td><span>00:00</span></td>
+                <td><span>00:00</span></td>
+                <td><span>00:00</span></td>
+                <td><span>00:00</span></td>
+                <td><span>00:00</span></td>
+                <td><span>00:00</span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img class="image2" src="https://e7.pngegg.com/pngimages/363/657/png-clipart-computer-icons-chromatography-50x50-chromatogram-miscellaneous-text.png"/></td>
+                <td><img class="image2" src="https://e7.pngegg.com/pngimages/363/657/png-clipart-computer-icons-chromatography-50x50-chromatogram-miscellaneous-text.png"/></td>
+                <td><img class="image2" src="https://e7.pngegg.com/pngimages/363/657/png-clipart-computer-icons-chromatography-50x50-chromatogram-miscellaneous-text.png"/></td>
+                <td><img class="image2" src="https://e7.pngegg.com/pngimages/363/657/png-clipart-computer-icons-chromatography-50x50-chromatogram-miscellaneous-text.png"/></td>
+                <td><img class="image2" src="https://e7.pngegg.com/pngimages/363/657/png-clipart-computer-icons-chromatography-50x50-chromatogram-miscellaneous-text.png"/></td>
+                <td><img class="image2" src="https://e7.pngegg.com/pngimages/363/657/png-clipart-computer-icons-chromatography-50x50-chromatogram-miscellaneous-text.png"/></td>
+            </tr>
+            <tr>
+                <td class="bordered cur2"><span>Прогноз</span></td>
+                <td class="bordered"><span>Облачно</span></td>
+                <td class="bordered"><span>Облачно</span></td>
+                <td class="bordered"><span>Облачно</span></td>
+                <td class="bordered"><span>Облачно</span></td>
+                <td class="bordered"><span>Облачно</span></td>
+                <td class="bordered"><span>Облачно</span></td>
+            </tr>
+            <tr>
+                <td class="bordered cur2"><span>Температура(C)</span></td>
+                <td class="bordered"><span>11</span></td>
+                <td class="bordered"><span>12</span></td>
+                <td class="bordered"><span>10</span></td>
+                <td class="bordered"><span>8</span></td>
+                <td class="bordered"><span>7</span></td>
+                <td class="bordered"><span>7</span></td>
+            </tr>
+            <tr>
+                <td class="bordered cur2"><span>Ощущается как</span></td>
+                <td class="bordered"><span>10</span></td>
+                <td class="bordered"><span>10</span></td>
+                <td class="bordered"><span>8</span></td>
+                <td class="bordered"><span>6</span></td>
+                <td class="bordered"><span>5</span></td>
+                <td class="bordered"><span>5</span></td>
+            </tr>
+            <tr>
+                <td class="bordered cur2"><span>Ветер(км/ч)</span></td>
+                <td class="bordered"><span>4.2</span></td>
+                <td class="bordered"><span>4.22</span></td>
+                <td class="bordered"><span>2.48</span></td>
+                <td class="bordered"><span>2.81</span></td>
+                <td class="bordered"><span>2.8</span></td>
+                <td class="bordered"><span>2.8</span></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+    <script src="sc.js"></script>
+
+</body>
+
+</html>
